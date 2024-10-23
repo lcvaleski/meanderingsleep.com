@@ -6,12 +6,20 @@
       margin: 0;
       font-family: system-ui, -apple-system, sans-serif;
       background: white;
+      display: flex;
+      justify-content: center;
+    }
+
+    .page-container {
+      width: 1000px;
+      min-width: 1000px;
+      background: white;
     }
     
     .navbar-container {
       display: flex;
       gap: 1rem;
-      padding: 1rem;
+      padding: 1rem 0;
     }
 
     .logo-section {
@@ -72,8 +80,13 @@
 
     .hero {
       text-align: center;
-      padding: 4rem 2rem;
-      background: linear-gradient(45deg, #2d3748 0%, #4a5568 30%, #718096 60%, #4C51BF 100%);
+      padding: 4rem 0;
+      background: linear-gradient(135deg, 
+        #1a1b36 0%,
+        #242654 25%,
+        #2d2d6d 50%,
+        #1a1b36 100%
+      );      border-radius: 1rem;
       min-height: 400px;
       display: flex;
       flex-direction: column;
@@ -94,11 +107,14 @@
       color: white;
       opacity: 0.9;
       max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
     
     .cta-buttons {
       display: flex;
       gap: 1rem;
+      justify-content: center;
     }
     
     .button {
@@ -123,16 +139,11 @@
     }
     
     .demo-section {
-      background: white;
-      padding: 2rem;
+      padding: 2rem 0;
       text-align: center;
-      max-width: 1200px;
-      margin: 0 auto;
     }
     
     .demo-container {
-      max-width: 800px;
-      margin: 0 auto;
       border-radius: 0.5rem;
       overflow: hidden;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -144,6 +155,7 @@
       padding: 3rem 2rem;
       text-align: center;
       margin: 4rem 0;
+      border-radius: 1rem;
     }
     
     .logos-grid {
@@ -152,7 +164,6 @@
       align-items: center;
       gap: 3rem;
       flex-wrap: wrap;
-      max-width: 900px;
       margin: 0 auto;
     }
     
@@ -160,6 +171,7 @@
       background: #f8e6ff;
       padding: 4rem 2rem;
       text-align: center;
+      border-radius: 1rem;
     }
     
     .feature-section h2 {
@@ -174,74 +186,45 @@
       max-width: 600px;
       margin: 0 auto 2rem auto;
     }
+
+    .demo-image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
   </style>
 </head>
 <body>
-  <div class="navbar-container">
-    <div class="logo-section">
-      <img src="/api/placeholder/24/24" alt="Logo" />
-      <span class="logo">MEANDERING</span>
-    </div>
-    
-    <div class="main-nav">
-      <div class="nav-links">
-        <a href="#">Features</a>
-        <a href="#">Contact</a>
+  <div class="page-container">
+    <div class="navbar-container">
+      <div class="logo-section">
+        <img src="icon.png" alt="Logo" width="35" height="35" />
+        <span class="logo">Meandering Sleep</span>
       </div>
-    </div>
-    
-    <div class="download-section">
-      <a href="#" class="download-button">Download</a>
-    </div>
-  </div>
-
-  <section class="hero">
-    <h1>The AI Sleep Assistant</h1>
-    <p>Built to make your rest extraordinarily refreshing, Meandering is the best way to sleep with AI.</p>
-    <div class="cta-buttons">
-      <a href="#" class="button button-primary">
-        <img src="/api/placeholder/20/20" alt="Download icon" />
-        Download for Free
-      </a>
-      <a href="#" class="button button-secondary">
-        <img src="/api/placeholder/20/20" alt="Play icon" />
-        Watch Demo
-        <span style="opacity: 0.7;">1 Minute</span>
-      </a>
-    </div>
-  </section>
-
-  <section class="demo-section">
-    <div class="demo-container">
-      <img src="/api/placeholder/800/500" alt="Sleep Analysis Interface" />
-      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-        <div style="background: black; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;">
-          <span style="color: white; font-size: 1.5rem;">▶</span>
+      
+      <div class="main-nav">
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">Contact: support@coventrylabs.net</a>
         </div>
       </div>
     </div>
-    <h2 style="color: black; margin-top: 2rem;">See Meandering In Action</h2>
-    <p style="color: #4a5568;">1 Minute</p>
-  </section>
 
-  <section class="logos-section">
-    <p style="margin-bottom: 2rem; color: #a0aec0;">Trusted by sleep experts at</p>
-    <div class="logos-grid">
-      <img src="/api/placeholder/120/40" alt="Company Logo" />
-      <img src="/api/placeholder/120/40" alt="Company Logo" />
-      <img src="/api/placeholder/120/40" alt="Company Logo" />
-      <img src="/api/placeholder/120/40" alt="Company Logo" />
-      <img src="/api/placeholder/120/40" alt="Company Logo" />
-      <img src="/api/placeholder/120/40" alt="Company Logo" />
-    </div>
-  </section>
+    <section class="hero">
+      <p>Taking advantage of AI hallucinations through rambling audio that puts you to bed.</p>
+      <div class="cta-buttons">
+        <a href="https://apps.apple.com/us/app/meandering-sleep/id6502964632" class="button button-primary">
+          App Store
+        </a>
+      </div>
+      <br>
+      <div class="cta-buttons">
+        <a href="https://play.google.com/store/apps/details?id=net.coventry.sleepless&hl=en" class="button button-primary">
+          Play Store
+        </a>
+      </div>
+    </section>
 
-  <section class="feature-section">
-    <h2>Knows your sleep patterns</h2>
-    <p>Get the best insights from your sleep data – or refer to specific patterns and trends. Use the AI's recommendations in one click.</p>
-    <div style="max-width: 800px; margin: 0 auto;">
-      <img src="/api/placeholder/800/400" alt="Sleep Analysis Interface" style="width: 100%; border-radius: 0.5rem; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);" />
-    </div>
-  </section>
+  </div>
 </body>
 </html>
