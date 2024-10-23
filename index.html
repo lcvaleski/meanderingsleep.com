@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, sans-serif;
+      background: white;
+    }
+    
+    .navbar-container {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    .logo-section {
+      background: black;
+      border-radius: 0.75rem;
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .main-nav {
+      background: black;
+      border-radius: 0.75rem;
+      padding: 0.75rem 1.5rem;
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    
+    .download-section {
+      background: #4C51BF;
+      border-radius: 0.75rem;
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+    
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    
+    .logo {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      white-space: nowrap;
+    }
+    
+    .download-button {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(45deg, #2d3748 0%, #4a5568 30%, #718096 60%, #4C51BF 100%);
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+    
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      color: white;
+    }
+    
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      color: white;
+      opacity: 0.9;
+      max-width: 600px;
+    }
+    
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+    }
+    
+    .button {
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .button-primary {
+      background: white;
+      color: black;
+    }
+    
+    .button-secondary {
+      background: rgba(0, 0, 0, 0.4);
+      color: white;
+      backdrop-filter: blur(10px);
+    }
+    
+    .demo-section {
+      background: white;
+      padding: 2rem;
+      text-align: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .demo-container {
+      max-width: 800px;
+      margin: 0 auto;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+    
+    .logos-section {
+      background: black;
+      padding: 3rem 2rem;
+      text-align: center;
+      margin: 4rem 0;
+    }
+    
+    .logos-grid {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    .feature-section {
+      background: #f8e6ff;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    
+    .feature-section h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #2d3748;
+    }
+    
+    .feature-section p {
+      font-size: 1.25rem;
+      color: #4a5568;
+      max-width: 600px;
+      margin: 0 auto 2rem auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar-container">
+    <div class="logo-section">
+      <img src="/api/placeholder/24/24" alt="Logo" />
+      <span class="logo">MEANDERING</span>
+    </div>
+    
+    <div class="main-nav">
+      <div class="nav-links">
+        <a href="#">Features</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    
+    <div class="download-section">
+      <a href="#" class="download-button">Download</a>
+    </div>
+  </div>
+
+  <section class="hero">
+    <h1>The AI Sleep Assistant</h1>
+    <p>Built to make your rest extraordinarily refreshing, Meandering is the best way to sleep with AI.</p>
+    <div class="cta-buttons">
+      <a href="#" class="button button-primary">
+        <img src="/api/placeholder/20/20" alt="Download icon" />
+        Download for Free
+      </a>
+      <a href="#" class="button button-secondary">
+        <img src="/api/placeholder/20/20" alt="Play icon" />
+        Watch Demo
+        <span style="opacity: 0.7;">1 Minute</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="demo-section">
+    <div class="demo-container">
+      <img src="/api/placeholder/800/500" alt="Sleep Analysis Interface" />
+      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <div style="background: black; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+          <span style="color: white; font-size: 1.5rem;">▶</span>
+        </div>
+      </div>
+    </div>
+    <h2 style="color: black; margin-top: 2rem;">See Meandering In Action</h2>
+    <p style="color: #4a5568;">1 Minute</p>
+  </section>
+
+  <section class="logos-section">
+    <p style="margin-bottom: 2rem; color: #a0aec0;">Trusted by sleep experts at</p>
+    <div class="logos-grid">
+      <img src="/api/placeholder/120/40" alt="Company Logo" />
+      <img src="/api/placeholder/120/40" alt="Company Logo" />
+      <img src="/api/placeholder/120/40" alt="Company Logo" />
+      <img src="/api/placeholder/120/40" alt="Company Logo" />
+      <img src="/api/placeholder/120/40" alt="Company Logo" />
+      <img src="/api/placeholder/120/40" alt="Company Logo" />
+    </div>
+  </section>
+
+  <section class="feature-section">
+    <h2>Knows your sleep patterns</h2>
+    <p>Get the best insights from your sleep data – or refer to specific patterns and trends. Use the AI's recommendations in one click.</p>
+    <div style="max-width: 800px; margin: 0 auto;">
+      <img src="/api/placeholder/800/400" alt="Sleep Analysis Interface" style="width: 100%; border-radius: 0.5rem; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);" />
+    </div>
+  </section>
+</body>
+</html>
