@@ -87,13 +87,28 @@
         #242654 25%,
         #2d2d6d 50%,
         #1a1b36 100%
-      );      border-radius: 1rem;
+      );
+      border-radius: 1rem;
       min-height: 400px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       margin-bottom: 2rem;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero img {
+      max-width: 300px;
+      height: auto;
+      object-fit: contain;
     }
     
     .hero h1 {
@@ -213,12 +228,16 @@
     </div>
 
     <section class="hero">
-      <p style="color:#FFFF00">"Imagine an elderly person telling you a story but they're struggling with the details and slowly forget what they're talking about"</p>
+      <div class="image-container">
+        <img src="1.png" alt="App Screenshot 1">
+        <img src="2.png" alt="App Screenshot 2">
+        <img src="3.png" alt="App Screenshot 3">
+      </div>
       <div class="cta-buttons">
-        <a href="https://apps.apple.com/us/app/meandering-sleep/id6502964632" class="button button-primary">
+        <a href="https://apps.apple.com/us/app/meandering-sleep/id6502964632" class="button button-primary" style="background-color: yellow;">
           App Store
         </a>
-        <a href="https://play.google.com/store/apps/details?id=net.coventry.sleepless&hl=en" class="button button-primary">
+        <a href="https://play.google.com/store/apps/details?id=net.coventry.sleepless&hl=en" class="button button-primary" style="background-color: yellow;">
           Play Store
         </a>
       </div>
