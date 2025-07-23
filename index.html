@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="icon" type="image/x-icon" href="icon.png">
+  <link rel="icon" type="image/x-icon" href="full_logo.png">
   <style>
     body {
       margin: 0;
@@ -21,12 +21,13 @@
       display: flex;
       gap: 1rem;
       padding: 1rem 0;
+      align-items: stretch;
     }
 
     .logo-section {
       background: black;
       border-radius: 0.75rem;
-      padding: 0.75rem 1.5rem;
+      padding: 0.25rem 1rem;
       display: flex;
       align-items: center;
       gap: 0.5rem;
@@ -35,7 +36,7 @@
     .main-nav {
       background: black;
       border-radius: 0.75rem;
-      padding: 0.75rem 1.5rem;
+      padding: 0.5rem 1.5rem;
       flex-grow: 1;
       display: flex;
       align-items: center;
@@ -107,8 +108,10 @@
 
     .hero img {
       max-width: 300px;
+      max-height: 450px;
       height: auto;
       object-fit: contain;
+      border-radius: 8px;
     }
     
     .hero h1 {
@@ -215,13 +218,11 @@
   <div class="page-container">
     <div class="navbar-container">
       <div class="logo-section">
-        <img src="icon.png" alt="Logo" width="35" height="35" />
-        <span class="logo">Meandering Sleep</span>
+        <img src="full_logo.png" alt="Logo" width="20" height="20" style="object-fit: contain;" />
       </div>
       
       <div class="main-nav">
         <div class="nav-links">
-          <a href="#">Home</a>
           <a href="#">Contact: support@coventrylabs.net</a>
         </div>
       </div>
@@ -232,12 +233,13 @@
         <img src="1.png" alt="App Screenshot 1">
         <img src="2.png" alt="App Screenshot 2">
         <img src="3.png" alt="App Screenshot 3">
+        <img src="4.png" alt="App Screenshot 4">
       </div>
       <div class="cta-buttons">
-        <a href="https://apps.apple.com/us/app/meandering-sleep/id6502964632" class="button button-primary" style="background-color: yellow;">
+        <a href="https://apps.apple.com/us/app/meandering-sleep/id6502964632" class="button button-primary" style="background-color: white;">
           App Store
         </a>
-        <a href="https://play.google.com/store/apps/details?id=net.coventry.sleepless&hl=en" class="button button-primary" style="background-color: yellow;">
+        <a href="https://play.google.com/store/apps/details?id=net.coventry.sleepless&hl=en" class="button button-primary" style="background-color: white;">
           Play Store
         </a>
       </div>
