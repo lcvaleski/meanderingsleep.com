@@ -22,7 +22,9 @@
     "typescript": "^5.9.2"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.13",
     "eslint": "^8",
-    "eslint-config-next": "^15.4.5"
+    "eslint-config-next": "^15.4.5",
+    "vercel": "^44.7.3"
   }
 }
