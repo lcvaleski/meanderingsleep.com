@@ -21,7 +21,7 @@ export default function Home() {
               </Link>
               <Link 
                 href="https://play.google.com/store/apps/details?id=net.coventry.sleepless&hl=en"
-                className="px-4 py-2 bg-ms-periwinkle text-white rounded-lg font-medium text-body hover:bg-ms-coral transition-colors"
+                className="px-4 py-2 bg-ms-periwinkle text-white rounded-lg font-medium text-body hover:opacity-90 transition-colors"
               >
                 Play Store
               </Link>
@@ -44,13 +44,13 @@ export default function Home() {
             <div className="flex gap-4 justify-center mb-12">
               <Link 
                 href="https://apps.apple.com/us/app/meandering-sleep/id6502964632"
-                className="px-8 py-4 bg-ms-nocturne text-white rounded-xl font-semibold text-lg hover:bg-ms-eclipse transition-all transform hover:scale-105 shadow-lg"
+                className="px-8 py-4 bg-ms-orchid text-white rounded-xl font-semibold text-lg hover:bg-ms-fuschia transition-all transform hover:scale-105 shadow-lg"
               >
                 Download for iOS
               </Link>
               <Link 
                 href="https://play.google.com/store/apps/details?id=net.coventry.sleepless&hl=en"
-                className="px-8 py-4 bg-ms-orchid text-white rounded-xl font-semibold text-lg hover:bg-ms-fuschia transition-all transform hover:scale-105 shadow-lg"
+                className="px-8 py-4 bg-ms-periwinkle text-white rounded-xl font-semibold text-lg hover:opacity-90 transition-all transform hover:scale-105 shadow-lg"
               >
                 Download for Android
               </Link>
@@ -293,7 +293,7 @@ export default function Home() {
             </Link>
             <Link 
               href="https://play.google.com/store/apps/details?id=net.coventry.sleepless&hl=en"
-              className="px-8 py-4 bg-ms-periwinkle text-white rounded-xl font-semibold text-lg hover:bg-ms-coral transition-all transform hover:scale-105 shadow-lg"
+              className="px-8 py-4 bg-ms-periwinkle text-white rounded-xl font-semibold text-lg hover:opacity-90 transition-all transform hover:scale-105 shadow-lg"
             >
               Download for Android
             </Link>
