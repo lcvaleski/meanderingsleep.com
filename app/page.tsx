@@ -3,45 +3,307 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className="flex justify-center min-h-screen bg-white">
-      <div className="w-[1000px] min-w-[1000px] bg-white">
-        <div className="flex gap-4 py-4 items-stretch">
-          <div className="bg-ms-nocturne rounded-xl px-4 py-1 flex items-center gap-2">
-            <Image src="/full_logo.png" alt="Logo" width={20} height={20} className="object-contain" />
-          </div>
-          
-          <div className="bg-ms-nocturne rounded-xl px-6 py-2 flex-grow flex items-center justify-start">
-            <div className="flex gap-8">
-              <a href="mailto:support@coventrylabs.net" className="text-ms-white no-underline text-sm">
-                Contact: support@coventrylabs.net
-              </a>
+    <div className="min-h-screen bg-white">
+      {/* Navigation */}
+      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center py-4">
+            <div className="flex items-center gap-2">
+              <Image src="/full_logo.png" alt="Meandering Sleep" width={32} height={32} className="object-contain" />
+              <span className="text-h3 font-semibold text-ms-nocturne hidden sm:inline">Meandering Sleep</span>
+            </div>
+            <div className="flex gap-3">
+              <Link 
+                href="https://apps.apple.com/us/app/meandering-sleep/id6502964632"
+                className="px-4 py-2 bg-ms-nocturne text-white rounded-lg font-medium text-body hover:bg-ms-eclipse transition-colors"
+              >
+                App Store
+              </Link>
+              <Link 
+                href="https://play.google.com/store/apps/details?id=net.coventry.sleepless&hl=en"
+                className="px-4 py-2 bg-ms-orchid text-white rounded-lg font-medium text-body hover:bg-ms-fuschia transition-colors"
+              >
+                Play Store
+              </Link>
             </div>
           </div>
         </div>
+      </nav>
 
-        <section className="text-center py-16 bg-gradient-to-br from-ms-nocturne via-ms-eclipse to-ms-blueberry rounded-2xl min-h-[400px] flex flex-col items-center justify-center mb-8">
-          <div className="flex justify-center gap-4 px-8 mb-8">
-            <Image src="/1.png" alt="App Screenshot 1" width={300} height={450} priority className="max-w-[300px] max-h-[450px] h-auto object-contain rounded-lg" />
-            <Image src="/2.png" alt="App Screenshot 2" width={300} height={450} priority className="max-w-[300px] max-h-[450px] h-auto object-contain rounded-lg" />
-            <Image src="/3.png" alt="App Screenshot 3" width={300} height={450} priority className="max-w-[300px] max-h-[450px] h-auto object-contain rounded-lg" />
-            <Image src="/4.png" alt="App Screenshot 4" width={300} height={450} priority className="max-w-[300px] max-h-[450px] h-auto object-contain rounded-lg" />
+      {/* Hero Section */}
+      <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-ms-buttercream/20 to-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h1 className="text-5xl sm:text-6xl font-bold text-ms-nocturne mb-6">
+              Finally, Quiet Your<br />Racing Mind at Night
+            </h1>
+            <p className="text-xl text-gray-700 max-w-2xl mx-auto mb-8">
+              Meandering Sleep plays AI-generated boring stories and dull lectures that gently lull you into deep sleep. 
+              No more lying awake with anxious thoughts.
+            </p>
+            <div className="flex gap-4 justify-center mb-12">
+              <Link 
+                href="https://apps.apple.com/us/app/meandering-sleep/id6502964632"
+                className="px-8 py-4 bg-ms-nocturne text-white rounded-xl font-semibold text-lg hover:bg-ms-eclipse transition-all transform hover:scale-105 shadow-lg"
+              >
+                Download for iOS
+              </Link>
+              <Link 
+                href="https://play.google.com/store/apps/details?id=net.coventry.sleepless&hl=en"
+                className="px-8 py-4 bg-ms-orchid text-white rounded-xl font-semibold text-lg hover:bg-ms-fuschia transition-all transform hover:scale-105 shadow-lg"
+              >
+                Download for Android
+              </Link>
+            </div>
           </div>
+
+          {/* App Preview */}
+          <div className="relative max-w-4xl mx-auto">
+            <div className="bg-gradient-sleep rounded-3xl p-8 shadow-2xl">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="relative aspect-[9/16] bg-ms-nocturne rounded-xl overflow-hidden shadow-lg">
+                  <Image src="/1.png" alt="App Screenshot" fill className="object-cover" />
+                </div>
+                <div className="relative aspect-[9/16] bg-ms-nocturne rounded-xl overflow-hidden shadow-lg">
+                  <Image src="/2.png" alt="Story Selection" fill className="object-cover" />
+                </div>
+                <div className="relative aspect-[9/16] bg-ms-nocturne rounded-xl overflow-hidden shadow-lg">
+                  <Image src="/3.png" alt="Player Screen" fill className="object-cover" />
+                </div>
+                <div className="relative aspect-[9/16] bg-ms-nocturne rounded-xl overflow-hidden shadow-lg">
+                  <Image src="/4.png" alt="Sleep Timer" fill className="object-cover" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Proof */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-ms-lavendar/10">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-ms-nocturne mb-12">
+            Loved by Insomniacs Everywhere
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-ms-lavendar/20">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-ms-orchid fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  </svg>
+                ))}
+              </div>
+              <p className="text-lg text-gray-700 mb-4">
+                "Somehow it just unhooks my brain. I've tried everything - meditation apps, white noise, podcasts. 
+                This is the only thing that consistently works."
+              </p>
+              <p className="text-sm text-gray-500">— Sarah M., App Store Review</p>
+            </div>
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-ms-lavendar/20">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-ms-orchid fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  </svg>
+                ))}
+              </div>
+              <p className="text-lg text-gray-700 mb-4">
+                "I listened to YouTube lectures before this, but they'd get too interesting! These stories are perfectly, 
+                wonderfully boring. I'm usually out in 15 minutes."
+              </p>
+              <p className="text-sm text-gray-500">— Mike R., Google Play Review</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-ms-nocturne mb-4">
+            How It Works
+          </h2>
+          <p className="text-xl text-center text-gray-700 mb-12 max-w-2xl mx-auto">
+            Our AI creates endlessly boring content specifically designed to help your mind drift off
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-20 h-20 bg-gradient-to-br from-ms-periwinkle to-ms-orchid rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+              </div>
+              <h3 className="text-h3 font-semibold text-ms-nocturne mb-2">Meandering Stories</h3>
+              <p className="text-body-lg text-gray-600">
+                AI-generated tales about mundane observations and everyday reflections. 
+                Engaging enough to occupy your mind, boring enough to let you drift off.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-20 h-20 bg-gradient-to-br from-ms-coral to-ms-fuschia rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4v16M17 4v16M3 8h4m10 0h4M3 16h4m10 0h4" />
+                </svg>
+              </div>
+              <h3 className="text-h3 font-semibold text-ms-nocturne mb-2">Boring Lectures</h3>
+              <p className="text-body-lg text-gray-600">
+                Monotonous talks on random topics delivered in the most sleep-inducing tone. 
+                Like your most boring college professor, but on demand.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-20 h-20 bg-gradient-to-br from-ms-blueberry to-ms-nocturne rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                </svg>
+              </div>
+              <h3 className="text-h3 font-semibold text-ms-nocturne mb-2">Sleep Timer</h3>
+              <p className="text-body-lg text-gray-600">
+                Automatically stops playback after you fall asleep. 
+                Set it and forget it - we'll take care of the rest.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Founder's Story */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-ms-buttercream/20">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-ms-lavendar/20">
+            <h2 className="text-3xl font-bold text-ms-nocturne mb-6">Why I Created Meandering Sleep</h2>
+            <p className="text-lg text-gray-700 mb-4">
+              Hi, I'm Logan. Like many of you, I've struggled with insomnia for years. 
+              My mind would race the moment my head hit the pillow - replaying conversations, 
+              planning tomorrow, worrying about everything and nothing.
+            </p>
+            <p className="text-lg text-gray-700 mb-4">
+              I tried everything: expensive meditation apps, white noise machines, sleep podcasts. 
+              Some helped a little, but nothing really worked consistently. The podcasts were either 
+              too interesting (keeping me awake) or the same content over and over (boring, but predictably so).
+            </p>
+            <p className="text-lg text-gray-700 mb-4">
+              As a software engineer, I had a crazy idea: what if AI could generate infinitely boring, 
+              yet somehow engaging stories? Stories that would give my anxious brain something to focus on, 
+              but be so wonderfully dull that I'd drift off naturally?
+            </p>
+            <p className="text-lg text-gray-700 font-medium">
+              It worked. And now I want to share it with everyone who's ever stared at their ceiling at 3 AM. 
+              You deserve rest, and sometimes you just need the right kind of boring to get there.
+            </p>
+            <p className="text-ms-orchid font-semibold mt-6">— Logan, Founder</p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-ms-nocturne mb-12">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-6">
+            <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+              <h3 className="text-h3 font-semibold text-ms-nocturne mb-2">
+                How is this different from other sleep apps?
+              </h3>
+              <p className="text-body-lg text-gray-600">
+                Unlike meditation apps or white noise, Meandering Sleep gives your busy mind something to follow - 
+                but makes it so boring you can't help but drift off. The AI ensures you never hear the same story twice.
+              </p>
+            </div>
+            
+            <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+              <h3 className="text-h3 font-semibold text-ms-nocturne mb-2">
+                Is it really AI-generated?
+              </h3>
+              <p className="text-body-lg text-gray-600">
+                Yes! Every story and lecture is uniquely generated by AI, ensuring endless variety. 
+                You'll never run out of new, perfectly boring content.
+              </p>
+            </div>
+            
+            <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+              <h3 className="text-h3 font-semibold text-ms-nocturne mb-2">
+                Can I try it for free?
+              </h3>
+              <p className="text-body-lg text-gray-600">
+                Absolutely! The app is free to download and includes daily free content. 
+                Premium unlocks unlimited stories and custom voice features.
+              </p>
+            </div>
+            
+            <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+              <h3 className="text-h3 font-semibold text-ms-nocturne mb-2">
+                What if I fall asleep with it playing?
+              </h3>
+              <p className="text-body-lg text-gray-600">
+                No worries! The built-in sleep timer automatically stops playback after your chosen duration 
+                (or defaults to 60 minutes), saving your battery and ensuring a peaceful night.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-sleep">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+            Ready for the Best Sleep of Your Life?
+          </h2>
+          <p className="text-xl text-ms-buttercream mb-10">
+            Join thousands who've finally found their perfect sleep solution.
+          </p>
           <div className="flex gap-4 justify-center">
             <Link 
-              href="https://apps.apple.com/us/app/meandering-sleep/id6502964632" 
-              className="px-6 py-3 rounded-lg no-underline font-medium flex items-center gap-2 bg-ms-white text-ms-nocturne"
+              href="https://apps.apple.com/us/app/meandering-sleep/id6502964632"
+              className="px-8 py-4 bg-white text-ms-nocturne rounded-xl font-semibold text-lg hover:bg-ms-buttercream transition-all transform hover:scale-105 shadow-lg"
             >
-              App Store
+              Download for iOS
             </Link>
             <Link 
-              href="https://play.google.com/store/apps/details?id=net.coventry.sleepless&hl=en" 
-              className="px-6 py-3 rounded-lg no-underline font-medium flex items-center gap-2 bg-ms-white text-ms-nocturne"
+              href="https://play.google.com/store/apps/details?id=net.coventry.sleepless&hl=en"
+              className="px-8 py-4 bg-ms-orchid text-white rounded-xl font-semibold text-lg hover:bg-ms-fuschia transition-all transform hover:scale-105 shadow-lg"
             >
-              Play Store
+              Download for Android
             </Link>
           </div>
-        </section>
-      </div>
+          <p className="text-ms-lavendar mt-8 text-sm">
+            Free to try • No credit card required
+          </p>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-8 px-4 sm:px-6 lg:px-8 bg-ms-nocturne">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="flex items-center gap-2">
+              <Image src="/full_logo.png" alt="Meandering Sleep" width={24} height={24} className="object-contain" />
+              <span className="text-white font-medium">Meandering Sleep</span>
+            </div>
+            <div className="flex gap-6 text-sm">
+              <a href="mailto:support@coventrylabs.net" className="text-ms-lavendar hover:text-white transition-colors">
+                Contact Support
+              </a>
+              <a href="/privacy" className="text-ms-lavendar hover:text-white transition-colors">
+                Privacy Policy
+              </a>
+              <a href="/terms" className="text-ms-lavendar hover:text-white transition-colors">
+                Terms of Service
+              </a>
+            </div>
+            <p className="text-ms-lavendar text-sm">
+              © 2024 Coventry Labs. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
