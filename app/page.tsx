@@ -21,10 +21,10 @@ export default function Home() {
 
         <section className="text-center py-16 bg-gradient-to-br from-ms-nocturne via-ms-eclipse to-ms-blueberry rounded-2xl min-h-[400px] flex flex-col items-center justify-center mb-8">
           <div className="flex justify-center gap-4 px-8 mb-8">
-            <Image src="/1.png" alt="App Screenshot 1" width={300} height={450} className="max-w-[300px] max-h-[450px] h-auto object-contain rounded-lg" />
-            <Image src="/2.png" alt="App Screenshot 2" width={300} height={450} className="max-w-[300px] max-h-[450px] h-auto object-contain rounded-lg" />
-            <Image src="/3.png" alt="App Screenshot 3" width={300} height={450} className="max-w-[300px] max-h-[450px] h-auto object-contain rounded-lg" />
-            <Image src="/4.png" alt="App Screenshot 4" width={300} height={450} className="max-w-[300px] max-h-[450px] h-auto object-contain rounded-lg" />
+            <Image src="/1.png" alt="App Screenshot 1" width={300} height={450} priority className="max-w-[300px] max-h-[450px] h-auto object-contain rounded-lg" />
+            <Image src="/2.png" alt="App Screenshot 2" width={300} height={450} priority className="max-w-[300px] max-h-[450px] h-auto object-contain rounded-lg" />
+            <Image src="/3.png" alt="App Screenshot 3" width={300} height={450} priority className="max-w-[300px] max-h-[450px] h-auto object-contain rounded-lg" />
+            <Image src="/4.png" alt="App Screenshot 4" width={300} height={450} priority className="max-w-[300px] max-h-[450px] h-auto object-contain rounded-lg" />
           </div>
           <div className="flex gap-4 justify-center">
             <Link 
