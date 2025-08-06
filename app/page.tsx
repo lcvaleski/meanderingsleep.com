@@ -35,7 +35,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-5xl sm:text-6xl font-bold text-ms-white mb-6">
-              Finally, Quiet Your<br />Racing Mind at Night
+              Unhook Your Brain<br />To Fall Asleep
             </h1>
             <p className="text-xl text-ms-lavendar max-w-2xl mx-auto mb-8">
               Meandering Sleep plays AI-generated boring stories and dull lectures that gently lull you into deep sleep. 
