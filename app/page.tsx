@@ -12,18 +12,20 @@ export default function Home() {
               <Image src="/full_logo.png" alt="Meandering Sleep" width={32} height={32} className="object-contain" />
               <span className="text-h3 font-semibold text-ms-white hidden sm:inline">Meandering Sleep</span>
             </div>
-            <div className="flex gap-3">
+            <div className="flex gap-2 sm:gap-3">
               <Link 
                 href="https://apps.apple.com/us/app/meandering-sleep/id6502964632"
-                className="px-4 py-2 bg-ms-orchid text-white rounded-lg font-medium text-body hover:bg-ms-fuschia transition-colors"
+                className="px-3 sm:px-4 py-2 bg-ms-orchid text-white rounded-lg font-medium text-xs sm:text-body hover:bg-ms-fuschia transition-colors"
               >
-                App Store
+                <span className="hidden sm:inline">App Store</span>
+                <span className="sm:hidden">iOS</span>
               </Link>
               <Link 
                 href="https://play.google.com/store/apps/details?id=net.coventry.sleepless&hl=en"
-                className="px-4 py-2 bg-ms-periwinkle text-white rounded-lg font-medium text-body hover:opacity-90 transition-colors"
+                className="px-3 sm:px-4 py-2 bg-ms-periwinkle text-white rounded-lg font-medium text-xs sm:text-body hover:opacity-90 transition-colors"
               >
-                Play Store
+                <span className="hidden sm:inline">Play Store</span>
+                <span className="sm:hidden">Android</span>
               </Link>
             </div>
           </div>
@@ -34,23 +36,25 @@ export default function Home() {
       <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-ms-nocturne to-ms-eclipse">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-5xl sm:text-6xl font-bold text-ms-white mb-6">
-              Unhook Your Brain<br />To Fall Asleep
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-ms-white mb-6 px-4 sm:px-0">
+              Unhook Your Brain<br className="hidden sm:inline" />
+              <span className="sm:hidden">To Fall Asleep</span>
+              <span className="hidden sm:inline">To Fall Asleep</span>
             </h1>
-            <p className="text-xl text-ms-lavendar max-w-2xl mx-auto mb-8">
+            <p className="text-lg sm:text-xl text-ms-lavendar max-w-2xl mx-auto mb-8 px-4 sm:px-0">
               Meandering Sleep plays AI-generated boring stories and dull lectures that gently lull you into deep sleep. 
               No more lying awake with anxious thoughts.
             </p>
-            <div className="flex gap-4 justify-center mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 px-4 sm:px-0">
               <Link 
                 href="https://apps.apple.com/us/app/meandering-sleep/id6502964632"
-                className="px-8 py-4 bg-ms-orchid text-white rounded-xl font-semibold text-lg hover:bg-ms-fuschia transition-all transform hover:scale-105 shadow-lg"
+                className="px-6 sm:px-8 py-3 sm:py-4 bg-ms-orchid text-white rounded-xl font-semibold text-base sm:text-lg hover:bg-ms-fuschia transition-all transform hover:scale-105 shadow-lg w-full sm:w-auto"
               >
                 Download for iOS
               </Link>
               <Link 
                 href="https://play.google.com/store/apps/details?id=net.coventry.sleepless&hl=en"
-                className="px-8 py-4 bg-ms-periwinkle text-white rounded-xl font-semibold text-lg hover:opacity-90 transition-all transform hover:scale-105 shadow-lg"
+                className="px-6 sm:px-8 py-3 sm:py-4 bg-ms-periwinkle text-white rounded-xl font-semibold text-base sm:text-lg hover:opacity-90 transition-all transform hover:scale-105 shadow-lg w-full sm:w-auto"
               >
                 Download for Android
               </Link>
@@ -58,8 +62,8 @@ export default function Home() {
           </div>
 
           {/* App Preview - 3 Phone Showcase */}
-          <div className="relative mt-16">
-            <div className="flex justify-center items-center gap-8 lg:gap-16">
+          <div className="relative mt-8 sm:mt-16">
+            <div className="flex justify-center items-center gap-4 sm:gap-8 lg:gap-16">
               {/* Left phone - Stories List */}
               <div className="relative transform -rotate-6 hover:rotate-0 transition-transform duration-500 hidden md:block">
                 <div className="absolute inset-0 bg-ms-orchid/10 blur-2xl" />
@@ -73,8 +77,8 @@ export default function Home() {
                 />
               </div>
               
-              {/* Center phone - Player */}
-              <div className="relative z-10 transform scale-110">
+              {/* Center phone - Player (shows on all screens) */}
+              <div className="relative z-10 transform sm:scale-110 max-w-[280px] sm:max-w-none">
                 <div className="absolute inset-0 bg-ms-periwinkle/20 blur-3xl" />
                 <Image 
                   src="/mockups/frame3.png" 
@@ -82,7 +86,7 @@ export default function Home() {
                   width={320} 
                   height={654}
                   priority
-                  className="relative drop-shadow-2xl"
+                  className="relative drop-shadow-2xl w-full h-auto"
                 />
               </div>
               
@@ -146,7 +150,7 @@ export default function Home() {
       {/* Features Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-ms-blueberry">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-ms-nocturne mb-4">
+          <h2 className="text-4xl font-bold text-center text-ms-white mb-4">
             How It Works
           </h2>
           <p className="text-xl text-center text-ms-lavendar mb-12 max-w-2xl mx-auto">
@@ -186,10 +190,10 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                 </svg>
               </div>
-              <h3 className="text-h3 font-semibold text-ms-white mb-2">Sleep Timer</h3>
+              <h3 className="text-h3 font-semibold text-ms-white mb-2">New Content Daily</h3>
               <p className="text-body-lg text-ms-buttercream/90">
-                Automatically stops playback after you fall asleep. 
-                Set it and forget it - we'll take care of the rest.
+                Fresh AI-generated stories every single day. 
+                You'll never run out of perfectly boring content.
               </p>
             </div>
           </div>
@@ -267,8 +271,8 @@ export default function Home() {
                 What if I fall asleep with it playing?
               </h3>
               <p className="text-body-lg text-ms-buttercream/90">
-                No worries! The built-in sleep timer automatically stops playback after your chosen duration 
-                (or defaults to 60 minutes), saving your battery and ensuring a peaceful night.
+                The stories are designed to be gentle and quiet. Most users report naturally waking less 
+                as the monotonous content helps maintain deeper sleep cycles.
               </p>
             </div>
           </div>
@@ -284,23 +288,20 @@ export default function Home() {
           <p className="text-xl text-ms-buttercream mb-10">
             Join thousands who've finally found their perfect sleep solution.
           </p>
-          <div className="flex gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center px-4 sm:px-0">
             <Link 
               href="https://apps.apple.com/us/app/meandering-sleep/id6502964632"
-              className="px-8 py-4 bg-ms-orchid text-white rounded-xl font-semibold text-lg hover:bg-ms-fuschia transition-all transform hover:scale-105 shadow-lg"
+              className="px-6 sm:px-8 py-3 sm:py-4 bg-ms-orchid text-white rounded-xl font-semibold text-base sm:text-lg hover:bg-ms-fuschia transition-all transform hover:scale-105 shadow-lg w-full sm:w-auto"
             >
               Download for iOS
             </Link>
             <Link 
               href="https://play.google.com/store/apps/details?id=net.coventry.sleepless&hl=en"
-              className="px-8 py-4 bg-ms-periwinkle text-white rounded-xl font-semibold text-lg hover:opacity-90 transition-all transform hover:scale-105 shadow-lg"
+              className="px-6 sm:px-8 py-3 sm:py-4 bg-ms-periwinkle text-white rounded-xl font-semibold text-base sm:text-lg hover:opacity-90 transition-all transform hover:scale-105 shadow-lg w-full sm:w-auto"
             >
               Download for Android
             </Link>
           </div>
-          <p className="text-ms-lavendar mt-8 text-sm">
-            Free to try • No credit card required
-          </p>
         </div>
       </section>
 
@@ -314,13 +315,13 @@ export default function Home() {
             </div>
             <div className="flex gap-6 text-sm">
               <a href="mailto:support@coventrylabs.net" className="text-ms-lavendar hover:text-white transition-colors">
-                Contact Support
+                support@coventrylabs.net
               </a>
-              <a href="/privacy" className="text-ms-lavendar hover:text-white transition-colors">
+              <a href="https://coventrylabs.net/privacy.html" className="text-ms-lavendar hover:text-white transition-colors">
                 Privacy Policy
               </a>
-              <a href="/terms" className="text-ms-lavendar hover:text-white transition-colors">
-                Terms of Service
+              <a href="https://coventrylabs.net/eula.html" className="text-ms-lavendar hover:text-white transition-colors">
+                EULA
               </a>
             </div>
             <p className="text-ms-lavendar text-sm">
