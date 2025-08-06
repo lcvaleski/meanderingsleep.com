@@ -113,7 +113,7 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center text-ms-white mb-12">
             Loved by Insomniacs Everywhere
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-3 gap-6">
             <div className="bg-ms-blueberry/50 backdrop-blur rounded-2xl p-8 shadow-lg border border-ms-lavendar/20">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
@@ -123,10 +123,10 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-lg text-ms-buttercream mb-4">
-                "Somehow it just unhooks my brain. I've tried everything - meditation apps, white noise, podcasts. 
-                This is the only thing that consistently works."
+                "I've tried numerous apps to help with my insomnia, but this one truly stands out. 
+                Since using this app, I've experienced significantly better sleep quality."
               </p>
-              <p className="text-sm text-ms-lavendar">— Sarah M., App Store Review</p>
+              <p className="text-sm text-ms-lavendar">— Drew P., App Store Review</p>
             </div>
             <div className="bg-ms-blueberry/50 backdrop-blur rounded-2xl p-8 shadow-lg border border-ms-lavendar/20">
               <div className="flex gap-1 mb-4">
@@ -137,10 +137,24 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-lg text-ms-buttercream mb-4">
-                "I listened to YouTube lectures before this, but they'd get too interesting! These stories are perfectly, 
-                wonderfully boring. I'm usually out in 15 minutes."
+                "This is exactly what I was looking for... something that allows me to drift-off 
+                to the deeper chasm of internal being. Love the app!"
               </p>
-              <p className="text-sm text-ms-lavendar">— Mike R., Google Play Review</p>
+              <p className="text-sm text-ms-lavendar">— pequickster, App Store Review</p>
+            </div>
+            <div className="bg-ms-blueberry/50 backdrop-blur rounded-2xl p-8 shadow-lg border border-ms-lavendar/20">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-ms-orchid fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  </svg>
+                ))}
+              </div>
+              <p className="text-lg text-ms-buttercream mb-4">
+                "I love this app so much! Nothing gets me to sleep like this one. 
+                Fantastic app!"
+              </p>
+              <p className="text-sm text-ms-lavendar">— Blank_Pages, App Store Review</p>
             </div>
           </div>
         </div>
@@ -190,10 +204,10 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                 </svg>
               </div>
-              <h3 className="text-h3 font-semibold text-ms-white mb-2">New Content Daily</h3>
+              <h3 className="text-h3 font-semibold text-ms-white mb-2">Soothing Voices</h3>
               <p className="text-body-lg text-ms-buttercream/90">
-                Fresh AI-generated stories every single day. 
-                You'll never run out of perfectly boring content.
+                Calm, relaxing narration paired with carefully chosen background sounds. 
+                Creates the perfect serene atmosphere for sleep.
               </p>
             </div>
           </div>
