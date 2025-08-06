@@ -58,21 +58,32 @@ export default function Home() {
           </div>
 
           {/* App Preview */}
-          <div className="relative max-w-4xl mx-auto">
-            <div className="bg-gradient-sleep rounded-3xl p-8 shadow-2xl">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div className="relative aspect-[9/16] bg-ms-nocturne rounded-xl overflow-hidden shadow-lg">
-                  <Image src="/1.png" alt="App Screenshot" fill className="object-cover" />
-                </div>
-                <div className="relative aspect-[9/16] bg-ms-nocturne rounded-xl overflow-hidden shadow-lg">
-                  <Image src="/2.png" alt="Story Selection" fill className="object-cover" />
-                </div>
-                <div className="relative aspect-[9/16] bg-ms-nocturne rounded-xl overflow-hidden shadow-lg">
-                  <Image src="/3.png" alt="Player Screen" fill className="object-cover" />
-                </div>
-                <div className="relative aspect-[9/16] bg-ms-nocturne rounded-xl overflow-hidden shadow-lg">
-                  <Image src="/4.png" alt="Sleep Timer" fill className="object-cover" />
-                </div>
+          <div className="relative max-w-lg mx-auto">
+            <div className="relative">
+              {/* Glow effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-ms-orchid/20 via-ms-periwinkle/20 to-ms-orchid/20 blur-3xl" />
+              
+              {/* Phone mockup */}
+              <div className="relative">
+                <Image 
+                  src="/mockups/frame1.png" 
+                  alt="Meandering Sleep App" 
+                  width={430} 
+                  height={880} 
+                  priority
+                  className="mx-auto drop-shadow-2xl"
+                />
+              </div>
+              
+              {/* Feature badges */}
+              <div className="absolute -left-16 top-1/4 bg-ms-blueberry/90 backdrop-blur rounded-xl px-4 py-2 hidden lg:block">
+                <p className="text-ms-white font-semibold text-sm">AI-Generated</p>
+                <p className="text-ms-lavendar text-xs">Infinite Stories</p>
+              </div>
+              
+              <div className="absolute -right-16 top-2/3 bg-ms-blueberry/90 backdrop-blur rounded-xl px-4 py-2 hidden lg:block">
+                <p className="text-ms-white font-semibold text-sm">Sleep Timer</p>
+                <p className="text-ms-lavendar text-xs">Auto-stop</p>
               </div>
             </div>
           </div>
@@ -113,6 +124,58 @@ export default function Home() {
                 wonderfully boring. I'm usually out in 15 minutes."
               </p>
               <p className="text-sm text-ms-lavendar">— Mike R., Google Play Review</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* App Showcase Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-ms-blueberry to-ms-eclipse overflow-hidden">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-ms-white mb-4">
+            Experience the App
+          </h2>
+          <p className="text-xl text-center text-ms-lavendar mb-16 max-w-2xl mx-auto">
+            Simple, beautiful, and designed to help you drift off peacefully
+          </p>
+          
+          <div className="relative">
+            <div className="flex justify-center items-center gap-8 lg:gap-16">
+              {/* Left phone - Stories List */}
+              <div className="relative transform -rotate-6 hover:rotate-0 transition-transform duration-500 hidden md:block">
+                <div className="absolute inset-0 bg-ms-orchid/10 blur-2xl" />
+                <Image 
+                  src="/mockups/frame2.png" 
+                  alt="Story Selection" 
+                  width={280} 
+                  height={572}
+                  className="relative drop-shadow-xl"
+                />
+              </div>
+              
+              {/* Center phone - Player */}
+              <div className="relative z-10 transform scale-110">
+                <div className="absolute inset-0 bg-ms-periwinkle/20 blur-3xl" />
+                <Image 
+                  src="/mockups/frame3.png" 
+                  alt="Sleep Player" 
+                  width={320} 
+                  height={654}
+                  className="relative drop-shadow-2xl"
+                />
+              </div>
+              
+              {/* Right phone - Home */}
+              <div className="relative transform rotate-6 hover:rotate-0 transition-transform duration-500 hidden md:block">
+                <div className="absolute inset-0 bg-ms-fuschia/10 blur-2xl" />
+                <Image 
+                  src="/mockups/frame1.png" 
+                  alt="Home Screen" 
+                  width={280} 
+                  height={572}
+                  className="relative drop-shadow-xl"
+                />
+              </div>
             </div>
           </div>
         </div>
