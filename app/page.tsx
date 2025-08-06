@@ -231,7 +231,7 @@ export default function Home() {
             <p className="text-lg text-ms-buttercream mb-4">
               As a software engineering student, I had an idea: what if AI could generate infinitely boring, 
               yet somehow engaging stories? Stories that would give my anxious brain something to focus on, 
-              but be so dull that I'd drift off naturally? I think it works pretty well
+              but be so dull that I'd drift off naturally? I think it works pretty well.
             </p>
             <p className="text-lg text-ms-buttercream font-medium">
               
