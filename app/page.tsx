@@ -220,23 +220,21 @@ export default function Home() {
           <div className="bg-ms-nocturne/80 backdrop-blur rounded-3xl p-8 md:p-12 shadow-xl border border-ms-lavendar/20">
             <h2 className="text-3xl font-bold text-ms-white mb-6">Why I Created Meandering Sleep</h2>
             <p className="text-lg text-ms-buttercream mb-4">
-              Hi, I'm Logan. Like many of you, I've struggled with insomnia for years. 
-              My mind would race the moment my head hit the pillow - replaying conversations, 
-              planning tomorrow, worrying about everything and nothing.
+              Hi, I'm Logan. Like many of you, I consistently struggle to fall asleep. 
+              My mind races - replaying conversations, planning tomorrow, etc.
             </p>
             <p className="text-lg text-ms-buttercream mb-4">
-              I tried everything: expensive meditation apps, white noise machines, sleep podcasts. 
+              I've tried many solutions: meditation apps, white noise machines, sleep podcasts. 
               Some helped a little, but nothing really worked consistently. The podcasts were either 
               too interesting (keeping me awake) or the same content over and over (boring, but predictably so).
             </p>
             <p className="text-lg text-ms-buttercream mb-4">
-              As a software engineer, I had a crazy idea: what if AI could generate infinitely boring, 
+              As a software engineering student, I had an idea: what if AI could generate infinitely boring, 
               yet somehow engaging stories? Stories that would give my anxious brain something to focus on, 
-              but be so wonderfully dull that I'd drift off naturally?
+              but be so dull that I'd drift off naturally? I think it works pretty well
             </p>
             <p className="text-lg text-ms-buttercream font-medium">
-              It worked. And now I want to share it with everyone who's ever stared at their ceiling at 3 AM. 
-              You deserve rest, and sometimes you just need the right kind of boring to get there.
+              
             </p>
             <p className="text-ms-orchid font-semibold mt-6">— Logan, Founder</p>
           </div>
