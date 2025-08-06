@@ -37,9 +37,8 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-ms-white mb-6 px-4 sm:px-0">
-              Unhook Your Brain<br className="hidden sm:inline" />
-              <span className="sm:hidden">To Fall Asleep</span>
-              <span className="hidden sm:inline">To Fall Asleep</span>
+              Unhook Your Brain<br />
+              To Fall Asleep
             </h1>
             <p className="text-lg sm:text-xl text-ms-lavendar max-w-2xl mx-auto mb-8 px-4 sm:px-0">
               Meandering Sleep plays AI-generated boring stories and dull lectures that gently lull you into deep sleep. 
@@ -77,16 +76,26 @@ export default function Home() {
                 />
               </div>
               
-              {/* Center phone - Player (shows on all screens) */}
+              {/* Center phone - Different on mobile vs desktop */}
               <div className="relative z-10 transform sm:scale-110 max-w-[280px] sm:max-w-none">
                 <div className="absolute inset-0 bg-ms-periwinkle/20 blur-3xl" />
+                {/* Mobile: Show frame1 (Home Screen) */}
+                <Image 
+                  src="/mockups/frame1.png" 
+                  alt="Home Screen" 
+                  width={320} 
+                  height={654}
+                  priority
+                  className="relative drop-shadow-2xl w-full h-auto md:hidden"
+                />
+                {/* Desktop: Show frame3 (Sleep Player) */}
                 <Image 
                   src="/mockups/frame3.png" 
                   alt="Sleep Player" 
                   width={320} 
                   height={654}
                   priority
-                  className="relative drop-shadow-2xl w-full h-auto"
+                  className="relative drop-shadow-2xl w-full h-auto hidden md:block"
                 />
               </div>
               
