@@ -14,6 +14,15 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: 'Meandering Sleep - Dreamy clouds animation',
+        type: 'image/gif',
+      }
+    ],
+    videos: [
+      {
+        url: '/meandering.mp4',
+        width: 1200,
+        height: 630,
+        type: 'video/mp4',
       }
     ],
     type: 'website',
