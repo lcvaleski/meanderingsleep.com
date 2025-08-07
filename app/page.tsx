@@ -58,6 +58,27 @@ export default function Home() {
                 Download for Android
               </Link>
             </div>
+            
+            {/* Award Badge */}
+            <Link 
+              href="https://thefordhamram.com/news/the-fordham-foundry-hosts-ninth-annual-pitch-challenge/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 mt-6 px-4 sm:px-0 hover:opacity-100 transition-opacity group"
+            >
+              <Image 
+                src="/foundry.png" 
+                alt="Fordham Foundry" 
+                width={100} 
+                height={25} 
+                className="object-contain opacity-80 group-hover:opacity-100 transition-opacity"
+              />
+              <p className="text-sm sm:text-base text-ms-lavendar/90 group-hover:text-ms-lavendar transition-colors">
+                <span className="font-semibold">2025 Pitch Challenge Winner</span>
+                <span className="hidden sm:inline"> • 1st Place out of 150 Teams</span>
+                <span className="sm:hidden"> • 1st/150</span>
+              </p>
+            </Link>
           </div>
 
           {/* App Preview - 3 Phone Showcase */}
