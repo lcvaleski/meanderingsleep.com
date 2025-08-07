@@ -2,13 +2,27 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Meandering Sleep - AI Bedtime Stories That Bore You to Sleep',
-  description: 'Finally quiet your racing mind at night. Meandering Sleep uses AI-generated boring stories and dull lectures to help you fall asleep naturally. Available on iOS and Android.',
-  keywords: 'sleep app, insomnia relief, bedtime stories, sleep aid, boring stories, fall asleep fast, meditation, sleep sounds',
+  title: 'Meandering Sleep - Fordham Foundry 2025 Winner | #1 Sleep App',
+  description: '🏆 Winner of Fordham Foundry Pitch Challenge 2025 (1st of 150 teams). Finally quiet your racing mind at night with AI-generated boring stories that actually work. Join thousands falling asleep faster.',
+  keywords: 'sleep app, insomnia relief, bedtime stories, sleep aid, boring stories, fall asleep fast, meditation, sleep sounds, fordham foundry winner',
   openGraph: {
-    title: 'Meandering Sleep - AI Bedtime Stories That Bore You to Sleep',
-    description: 'Finally quiet your racing mind at night with AI-generated boring stories.',
-    images: ['/full_logo.png'],
+    title: 'Meandering Sleep - Award-Winning Sleep App',
+    description: '🏆 Fordham Foundry 2025 Winner • Finally fall asleep with AI-generated boring stories that quiet racing thoughts. Loved by insomniacs everywhere.',
+    images: [
+      {
+        url: '/meanderinggif.gif',
+        width: 1200,
+        height: 630,
+        alt: 'Meandering Sleep - Dreamy clouds animation',
+      }
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Meandering Sleep - Award-Winning Sleep App',
+    description: '🏆 Fordham Foundry 2025 Winner • Finally fall asleep with AI-generated boring stories',
+    images: ['/meanderinggif.gif'],
   },
 }
 
