@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import GoogleAnalytics from './GoogleAnalytics'
 
 export const metadata: Metadata = {
   title: 'Meandering Sleep - Fordham Foundry 2025 Winner | #1 Sleep App',
@@ -42,7 +43,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="font-manrope">{children}</body>
+      <body className="font-manrope">
+        {children}
+        <GoogleAnalytics />
+      </body>
     </html>
   )
 }
